@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "IBM";
+    src: url("./fonts/IBMPlexMono-Regular.ttf");
+}
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    font-family: "IBM";
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background: rgba(105, 166, 162,.29);
+    height: 15vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(50px);
+    z-index: 1000;
+}
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    margin-right: 1em;
+}
+.logoContainer img{
+    margin: 1em;
+}
+.logoContainer .dropWorld{
+    letter-spacing: 1px;
+}
+nav a{
+    margin: 1em;
+    font-size: .8em;
+}
+.firstPage{
+    background-image: url("./images/idea\ fiesta\ \ image\ of\ a\ boy.jpg");
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.firstPage h2,.firstPage p{
+    max-width: 70vw;
+    padding-left:100px;
+    letter-spacing: 2px;
+}
+.firstPage p{
+    letter-spacing: 1px;
+}
+.firstPage button{
+    width: 150px;
+    padding: 20px;
+    background: #000;
+    border-radius: 10px;
+    margin-left:100px ;
+    color: white;
+    box-shadow: 8px 8px 0 rgba(0,0,0,.44);
+    margin-top: 20px;
+}
+.readOrWrite{
+    background: #323D3a;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.readOrWrite p{
+    color: white;
+    letter-spacing: 2px;
+}
+.readOrWrite .box{
+    min-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    /* background: white; */
+    border-radius: 20px;
+    /* background-size: 20%; */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+.box p{
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.read{
+    background-image: url("./images/read\ icon\ Idea\ Fiesta.png");
+    background-position: center;
+    background-size: cover;
+}
+.write{
+    background-image: url("./images/Write\ Blog.png");
+    background-position: center;
+    background-size: cover;
+}
+.About{
+    height: 85vh;
+    background:rgba(166, 113, 105,.29);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.AboutContent{
+    background: #1e1e1e;
+    color: #f0f0f0;
+    max-width: 550px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 15px 15px 0 rgba(0,0,0,.44);
+}
+.AboutContent p{
+    font-size: .8em;
+    padding: 20px;
+}
+.aboutHead{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+.MiniGames{
+    height: 85vh;
+    background:#f3eced;
+    text-align: center;
+}
+.MiniGames p{
+    text-align: center;
+}
+.MiniGames .Maintitle{
+    transform: translateY(80px);
+    font-size: 1.2em;
+}
+.gameSection{
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gameSection .game{
+    min-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    /* background: rgb(208, 206, 206); */
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 rgba(0,0,0,.44);
+    margin: 15px;
+    background-position: center;
+    background-size: 90%;
+    transition: .2s ;
+}
+.game:hover{
+    transform: scale(1.1);
+}
+.game1{
+    background-image: url("./images/1000_F_204635658_guLWhIoZG7m77FRXAN9p6rnji8KCpLqL.jpg");
+}
+.game2{
+    background-image: url("./images/chess.jpg");
+}
+.game3{
+    background-image: url("./images/snake.jpg");
+}
+.game4{
+    background-image: url("./images/music.png");
+}
+.game p{
+    transform: translateY(120px);
+}
+.MiniGames button{
+    padding: 15px;
+    transform: translateY(-60px);
+    border-radius: 8px;
+    color: #fff;
+    background: #000;
+    box-shadow: 8px 8px 0 rgba(0,0,0,.44);
+}
+.EmailUs{
+    background: rgba(56, 96, 91,.29);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EmailUs div{
+    height: 100%;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.EmailUs p{
+    width: 60%;
+}
+.EmailUs button{
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: #fff;
+    background: #000;
+    box-shadow: 8px 8px 0 rgba(0,0,0,.44);
+}
+footer{
+    background: #282e2b;
+    height: 60vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    min-width: fit-content;
+}
+footer section{
+    margin-top: 70px;
+}
+.FtrNav .Title, .FtrContact .Title{
+    padding-bottom: 10px;
+}
+.FtrContact .child{
+    font-size: .6em;
+    margin: 5px 0 10px;
+    opacity: .7;
+}
+.FtrLogo >p{
+    opacity: .5;
+}
+.FtrLogo >p:hover{
+    opacity: 1;
+}
+.copyright{
+    position: absolute;
+    font-size: .7em;
+    transform: translateY(350px);
+}
+.Blogs{
+    padding: 50px;
+    text-align: justify;
+}
+.Blogs .post{
+    margin-top: 30px;
+    background: rgb(24, 28, 40);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+.Blogs .post h3{
+    padding-bottom: 25px;
+}
+.Blogs .post P{
+    line-height: 1.6em;
+}
+nav a:hover{
+    border-bottom: 1px solid black;
+}
+.compose{
+    height: 85vh;
+    background: #aaed85;
+}
+button{
+    transition: .2s ease-in-out;
+}
+button:hover{
+    box-shadow: 12px 12px 0 rgba(0,0,0,.44);
+}
+.box:hover{
+    transform: scale(1.1);
+}
+@media (max-width:700px){
+    .game{
+        transform: scale(.7);
+    }
+    .game:hover{
+        transform: scale(.9);
+    }
+}
